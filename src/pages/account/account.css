@@ -1,0 +1,84 @@
+.account {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+}
+.account .account_content {
+    width: calc(100% - 60px);
+    box-sizing: border-box;
+    padding: 20px 60px;
+    height: auto;
+}
+.account_content, .head_body, .account_info {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.account_head, .head_body > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account_content .account_header, .account_content .account_head,
+.account_content .account_infos, .account_content .account_features {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.account_content h1, .account_content h2 {
+    line-height: .4rem;
+}
+.account_content span {
+    line-height: 1.3rem;
+}
+.account_header h1 {
+    font-size: 30px;
+}
+.account_header span {
+    font-size: 15px;
+    color: #aeaeae;
+}
+.account_head h1 {
+    font-size: 24px;
+}
+.head_body {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+}
+.head_body img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-top: -10px;
+    border-radius: 50%;
+}
+.account_infos {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 5%;
+    height: auto;
+    /* margin-bottom: 10px; */
+    /* background-color: red; */
+}
+.account_infos li {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    border: 1px solid #e2e8f0;
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 0px;
+}
+.account_infos li:nth-child(4) {
+    /* padding: 5px 10px; */
+    border: 1px solid #e2e8f0;
+}
+.account_info h2 {
+    font-size: 25px;
+}
+.account_info span {
+    font-size: 16px;
+}

@@ -1,0 +1,106 @@
+.app_wrapper .wallet {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 10000;
+    top: 0%;
+    overflow-x: hidden;
+    justify-content: space-between;
+}
+.wallet .wallet_dummy {
+    width: calc(100% - 500px);
+    height: 100%;
+    background-color: rgba(27,27,27,0.75);
+}
+.modal .wallet_main {
+    width: 500px;
+    height: 100%;
+}
+.slider .wallet_body, .slider .wallet_top {
+    width: 90%;
+}
+.slider .wallet_body {
+    height: calc(100% - 70px);
+}
+.wallet_body {
+    /* height: calc(100% - 100px); */
+    position: relative;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-content: space-around;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.wallet_body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.wallet_top {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+/* flex column */
+.wallet_flex {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding-left: 20px;
+}
+.wallet_top svg {
+    padding-bottom: 10px;
+}
+.wallet_body > h2 {
+    font-size: 30px;
+    margin-top: 5px;
+    line-height: 3rem;
+    color: rgb(231,67,156);
+}
+.wallet_body > span {
+    font-size: 17px;
+    line-height: 2rem;
+    margin-top: 10px;
+}
+.wallet_body .wallet_display,
+.wallet .wallet_link {
+    width: 100%;
+    height: auto;
+    background-color: rgb(231,67,156);
+    /* display: flex; */
+    margin-top: 20px;
+    color: white;
+    border-radius: 10px 10px 10px 0px;
+}
+.wallet_display {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px 20px;
+}
+.wallet_display span {
+    line-height: 1.5rem;
+}
+.wallet_flex .small_ttxxt {
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+}
+.wallet_flex .med_ttxxt {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+.wallet_link {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px 0px;
+    text-transform: uppercase;
+}

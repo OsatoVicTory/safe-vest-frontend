@@ -1,0 +1,30 @@
+.app_wrapper .topup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 100000000;
+}
+.topup .dummy {
+    width: calc(100% - 500px);
+    height: 100%;
+    background-color: none;
+}
+.popup_body .act_nav {
+    width: 100%;
+    height: auto;
+    margin: 20px 0px 0px 0px;
+    display: flex;
+}
+.act_nav li {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin-right: 15px;
+    border: 1px solid #e2e8f0;
+    border-width: .8px;
+    border-radius: 5px 5px 5px 0px;
+    font-size: 15px;
+    cursor: pointer;
+}

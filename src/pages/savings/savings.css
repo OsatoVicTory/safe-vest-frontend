@@ -1,0 +1,106 @@
+.savings {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.savings_container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.savings_container .savings_wrapper {
+    width: 95%;
+    height: 99%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.savings_wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.savings_wrapper .savings_content {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+.savings_content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.savings_content .savings_header {
+    width: 100%;
+    height: auto;
+}
+.savings_header .header_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    height: auto;
+    box-sizing: border-box;
+}
+.header_top h1 {
+    width: clac(100% - 70px);
+}
+.header_top img {
+    width: 70px;
+    /* /* padding-top: 20px; */
+    /* padding-right: 10px;  */
+    height: 70px;
+    border-radius: 50%;
+}
+.savings_header .savings_navbar {
+    width: 100%;
+    overflow-x: scroll;
+    border-width: 1px;
+    border-bottom: 1px solid #e2e8f0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.savings_navbar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.savings_navbar ul {
+    width: auto;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar_lists li {
+    width: auto;
+    margin-left: 15px;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.navbar_lists li:nth-child(1) {
+    margin-left: 0px;
+}
+.navbar_list .navbar_links {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar_links svg {
+    margin-top: 3px;
+}
+.navbar_links span {
+    font-size: 20px;
+    /* color: #7a7b7d; */
+    white-space: nowrap;
+    padding-left: 10px;
+}

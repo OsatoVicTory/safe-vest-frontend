@@ -1,0 +1,62 @@
+.my_container {
+    width: 100%;
+    /* position: relative; */
+    height: auto;
+    background-color: transparent;
+    align-items: center;
+    /* overflow-x: hidden !important; */
+}
+.my_container .my_content {
+    width: 100%;
+    height: auto;
+}
+.my_content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.my_content .my_top {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 0px;
+}
+.my_top ul {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    overflow-x: scroll;
+    padding: 0;
+    display: flex;scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.my_top ul::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.my_lists li {
+    width: auto;
+    margin: 0px 15px;
+    padding: 8px 20px;
+    border-radius: 10px 10px 10px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: none;
+    border-width: 1px;
+    text-transform: capitalize;
+    border: 1px solid #e2e2e2;
+}
+.my_lists .my_list_selected {
+    /* background-color: green; */
+    color: white;
+    border: .5px solid white;
+} 
+.my_lists .my_list_selected span {
+    color: white;
+    white-space: nowrap;
+}
+.my_lists li span {
+    font-size: 18px;
+    color: #adaaaa;
+    white-space: nowrap;
+}

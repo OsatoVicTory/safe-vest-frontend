@@ -1,0 +1,81 @@
+.landingpage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.landingpage .lp_wrapper {
+    width: 40rem;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 0px;
+}
+.lp_wrapper .lp_content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px 0px;
+    flex-direction: column;
+    align-content: space-around;
+}
+.brand_logo {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.brand_logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.brand_logo h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10px;
+}
+.lp_content h1 {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1rem;
+    color: #062863;
+}
+.lp_span {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    color: #aeaeae;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+.lp_content .lp_routes {
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 0px;
+    cursor: pointer;
+    background-color: rgb(34,149,242);
+}
+
+@media screen and (max-width: 700px) {
+    .landingpage .lp_wrapper {
+        width: 90%;
+        height: auto;
+    }
+}

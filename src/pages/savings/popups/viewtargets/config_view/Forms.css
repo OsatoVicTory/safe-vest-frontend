@@ -1,0 +1,41 @@
+.topup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 10000000;
+}
+.topup .dummy {
+    width: calc(100% - 500px);
+    height: 100%;
+    background-color: none;
+}
+.complete_base {
+    margin-top: 30px;
+    /* z-index: 500; */
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px 0px;
+    border-width: 1px;
+}
+.complete_base input, .complete_base .loading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 5px 5px 5px 0px;
+    padding: 15px 0px;
+    background-color: rgb(34,149,242);
+    cursor: pointer;
+} 
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

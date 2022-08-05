@@ -1,0 +1,36 @@
+.popupbody ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.info-lists li {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px 10px 10px 0px;
+}
+.info-h1 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1rem;
+}
+.info-list .biginfo_txt {
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+.info-list .smallinfo_txt {
+    font-size: 15px;
+    color: black;
+    margin-top: 10px;
+    line-height: 1.5rem;
+}

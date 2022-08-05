@@ -1,0 +1,184 @@
+.home_container {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow-y: scroll;
+}
+.home_container .home_content {
+    width: calc(100% - 50px);
+    height: 99%;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    /* overflow-y: scroll; */
+}
+.home_container h1 {
+    line-height: 1.5rem;
+    margin: 0;
+} 
+.home_container span {
+    line-height: 2.5rem;
+    margin: 0;
+}
+.home_content, .home_header_left, .scroll_text, .todo {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.home_content .home_header, .home_content .home_body {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.home_content .home_main {
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+}
+.home_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home_header img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.home_header_left h1 {
+    font-size: 30px;
+    color: black;
+}
+.home_header_left span {
+    font-size: 14px;
+    color: #aeaeae;
+}
+
+.home_body ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    overflow-x: auto !important;
+}
+.home_body .scroll-x-list {
+    width: auto;
+    height: 11rem;
+}
+.scroll-x-list .scroll-x-link {
+    width: 25rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 15px 15px 15px 0px;
+}
+.scroll-x-link {
+    box-sizing: border-box;
+    padding: 25px 25px;
+}
+.scroll-x-link img {
+    width: 35px;
+    height: 35px;
+}
+.scroll-x-link .scroll_text {
+    padding-left: 20px;
+    margin-top: -20px;
+}
+.scroll_text span {
+    font-size: 19px;
+    color: white;
+    line-height: 3.5rem;
+    margin: 0;
+}
+.scroll_text h1 {
+    font-size: 38px;
+    color: white;
+}
+.home_main .todo, .home_main .activities {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden !important;
+}
+.todo, .activities {
+    height: auto;
+    margin-top: 20px;
+}
+.todo > span, .activities > span {
+    font-size: 18px;
+}
+.todo .add_todo {
+    width: 98%;
+    height: 4rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+}
+.add_todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.add_todo input {
+    width: 68%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #eeeeee;
+}
+.add_todo button {
+    width: 30%;
+    background-color: rgb(72, 236, 111);
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.add_todo input, .add_todo button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+.home_content .bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    color: blue;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 1470px) {
+    .home_body ul {
+        width: 100%;
+        display: flex;
+        height: auto;
+        overflow-x: auto !important;
+    }
+    .scroll-x .scroll-x-list {
+        width: auto;
+        height: 11rem;
+        margin-right: 30px;
+    }
+    .scroll-x-list .scroll-x-link {
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 770px) {
+    .home_container .home_content {
+        width: 100%;
+        height: 99%;
+    }
+    .home_content .home_main {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+}

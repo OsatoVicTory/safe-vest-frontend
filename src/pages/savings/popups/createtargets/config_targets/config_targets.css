@@ -1,0 +1,12 @@
+.config_targets {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    z-index: 1000000;
+}
+.config_targets .dummy {
+    width: calc(100% - 500px);
+    height: 100%;
+    background-color: none;
+}

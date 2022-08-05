@@ -1,0 +1,197 @@
+.slider .popup_body, .slider .popup_top {
+    width: 90%;
+}
+.slider .popup_body {
+    height: calc(100% - 70px);
+}
+.popup_body {
+    /* height: calc(100% - 100px); */
+    position: relative;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-content: space-around;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.popup_body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.popup_top {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+.popup_top svg {
+    padding-bottom: 15px;
+}
+.popup_body h2 {
+    margin: 0px;
+    line-height: 1.5rem;
+}
+.popup_body span {
+    margin: 0;
+    line-height: 2.0rem;
+}
+/* widths */
+.popup_body .image_container, .popup_body .details,
+.popup_body .Button-completed, .popup_body .Button-about,
+ .popup_body .routes, .popup_body ul, .popup_body .extra {
+    width: 100%;
+    height: auto;
+}
+/* column flexes */
+.details_left, .details_right, .route, .desc_lists li, .extra, .extra_list {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+/* center flexes */
+.Button-completed, .Button-about, .routes, .like_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.med_txxt {
+    padding-left: 13px;
+}
+.small_txxt {
+    font-size: 14px;
+    color: #a0aec0;
+    padding-left: 13px;
+}
+.med_txxt {
+    font-size: 14px;
+    font-weight: 550;
+}
+.image_container .image {
+    width: 100%;
+    height: 10rem;
+    margin-top: 10px;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.verified {
+    width: 190px;
+    height: auto;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    text-transform: uppercase;
+    background-color: rgb(82, 207, 109);
+    color:white;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.details .details_left {
+    width: 70%;
+}
+.details .details_right {
+    width: 25%;
+}
+.details_left h2 {
+    font-size: 21px;
+    font-weight: 600;
+    color: black;
+}
+.details_right h2 {
+    color: rgb(46, 220, 46);
+    font-size: 20px;
+    font-weight: 600;
+}
+.details_left span, .details_right span {
+    margin-left: -13px;
+}
+.Button-completed, .Button-about {
+    box-sizing: border-box;
+    padding: 10px 0px;
+    border: 1px solid rgb(162, 0, 162);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 550;
+    border-radius: 10px 10px 10px 0px;
+}
+.Button-completed {
+    background-color: rgb(162, 0, 162);
+    color: white;
+    margin-top: 30px;
+}
+.Button-about {
+    background-color: white;
+    color: rgb(162, 0, 162);
+    margin-top: 15px;
+}
+.popup_body > span {
+    text-align: center;
+    margin-top: 10px;
+}
+.routes {
+    margin-top: 10px;
+}
+.route {
+    width: auto;
+    height: auto;
+}
+.like_link {
+    width: 70px;
+    margin-left: 30px;
+    height: auto;
+    box-sizing: border-box;
+    background-color: rgb(217, 122, 217);
+    padding: 20px 10px;
+    border-radius: 10px 10px 10px 0px;
+}
+.route .small_txxt {
+    margin-left: 40px;
+}
+.like_link img {
+    width: 20px;
+    height: 20px;
+}
+.like_link span {
+    font-weight: bold;
+    color: black;
+}
+.desc_lists {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 4%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.desc_lists li, .extra .extra_list {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    border-radius: 10px 10px 10px 0px;
+    border: 1px solid #e2e8f0;
+    border-width: 1px;
+}
+.desc_list .med_txxt {
+    width: 90%;
+    height: auto;
+    white-space: normal !important;
+    line-height: 1.5rem;
+}
+.extra {
+    margin-top: 30px;
+}
+.extra > span, .extra .extra_list {
+    margin-top: 10px;
+}

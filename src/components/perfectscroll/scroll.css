@@ -1,0 +1,213 @@
+.infinte_scroll {
+    width: 99%;
+    position: relative;
+    height: auto;
+    box-sizing: border-box;
+    padding: 7px 0px;
+}
+.infinte_scroll ul {
+    width: 100%;
+    height: auto;
+}
+.scroll_lists li {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 30px 0px;
+    border-width: 1px;
+    border-bottom: 1px solid #e2e8f0;
+}
+li:last-child {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+.scroll_list .scroll_link {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+.scroll_link img {
+    width: 33%;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 0px;
+}
+.scroll_link .dets {
+    width: 66%;
+    height: 13rem;
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+.scroll_link .investment_dets {
+    height: auto;
+    width: 66%;
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+.scroll_link, .dets_mid, .dets_base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dets, .dets_bal, .investment_dets {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.dets h1 {
+    font-size: 25px;
+    line-height: 2rem;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+.investment_dets h1 {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1rem;
+    box-sizing: border-box;
+    padding: 0px 15px;
+}
+.top_txtt {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 18px;
+}
+.top_txtt span {
+    line-height: .5rem;
+}
+
+.dets .dets_mid {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 20px;
+}
+.investment_dets .dets_mid {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 20px;
+}
+.dets_mid .dets_bal {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+
+}
+h1, .big_text, .small_text {
+    color: black;
+}
+.big_text {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1rem;
+}
+.small_text {
+    font-size: 15px;
+    padding-top: 15px;
+    line-height: 1rem;
+}
+.dets .dets_base {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    margin-top: 30px;
+    height: auto;
+    /* background-color: red; */
+}
+.investment_dets .dets_base {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    margin-top: 30px;
+    height: auto;
+    /* background-color: red; */
+}
+.dets_base .soldout {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    padding: 3px 25px;
+    font-weight: 500;
+    margin-top: -5px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: rgb(223, 159, 159);
+    color: rgb(209, 48, 48);
+}
+.dets_base .dets_range_bar {
+    width: 90%;
+    height: .8rem;
+    border-radius: 5px;
+    background-color: #b7b8b9;
+}
+.dets_range_bar .dets_range {
+    height: 100%;
+    border-radius: 5px;
+}
+.dets_base span {
+    width: auto;
+    height: 20px;
+    box-sizing: border-box;
+    /* padding: 0px 20px 0px 0px; */
+    padding-left: 10px;
+    line-height: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: end;
+}
+.scroll_lists .loading-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.loading-div {
+    margin-top: 30px;
+    /* z-index: 500; */
+    box-sizing: border-box;
+    height: auto;
+    padding: 20px 0px;
+    border-width: 1px;
+}
+.loading-div .loading {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 5px 5px 5px 0px;
+    padding: 15px 0px;
+    background-color: none;
+    cursor: pointer;
+} 
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 769px) {
+    .scroll_link {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    .scroll_link img, .scroll_link .dets, .scroll_link .investment_dets {
+        width: 100%;
+    }
+    .investment_dets .dets_mid, .dets .dets_mid,
+    .dets h1, .dets .dets_base,
+     .investment_dets h1, .investment_dets .dets_base {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .top_txtt {
+        margin-left: 0px;
+    }
+}

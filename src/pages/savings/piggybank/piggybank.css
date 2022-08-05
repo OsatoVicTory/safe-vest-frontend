@@ -1,0 +1,66 @@
+.savings_content .piggybank {
+    width: 99%;
+}
+.piggybank {
+    position: relative;
+    height: auto;
+    padding: 5px 0px;
+}
+.piggybank .piggybank_content {
+    width: 70%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 0px;
+    border: 1px solid #e2e8f0;
+    border-width: 1px;
+}
+.piggybank_content .piggybank_top {
+    width: 100%;
+    height: auto;
+}
+.piggybank_top {
+    box-sizing: border-box;
+    padding: 15px 25px;
+    display: flex;
+    border-bottom: 1px solid #e2e8f0;
+    flex-direction: column;
+    align-content: space-around;
+}
+.piggybank_top h3 {
+    font-size: 14px;
+    
+    margin: 0px;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+.piggybank_lists {
+    width: auto;
+    display: flex;
+    margin-top: 10px;
+}
+.piggybank_links {
+    width: auto;
+    height: auto;
+    margin-top: 0px;
+    margin-right: 20px;
+    color: black;
+    border-radius: 8px 8px 8px 0px;
+    box-sizing: border-box;
+    padding: 8px 15px;
+    border: 1px solid #e2e8f0;
+}
+.piggy_content .safelock_wrapper {
+    /* position: relative; */
+    width: 100%;
+    /* background-color: red; */
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 1040px) {
+    .piggybank .piggybank_content {
+        width: 100%;
+    }
+}

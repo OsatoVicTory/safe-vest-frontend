@@ -1,0 +1,91 @@
+.input_div {
+    width: 100%;
+    /* position: relative; */
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.input_div span {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    padding-left: 3px;
+    line-height: 2rem;
+}
+
+.input_div .select-field {
+    width: 100%;
+    height: auto;
+}
+.input_div > input {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #edf2f7;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.select-field .input-select {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #edf2f7;
+    /* padding: 0px 2px; */
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.input-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select-field, .select-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.select-field .select-dropdown {
+    width: 100%;
+    margin-top: 10px;
+    max-height: 200px;
+    background-color: #edf2f7;
+    /* padding: 0px; */
+    padding-bottom: 5px;
+    /* box-shadow: .5px .5px 2px 5px rgb(72, 71, 71), -.5px -.5px 2px 5px rgb(72, 71, 71); */
+    border-radius: 5px;
+    border: 1px solid #c5c6c7;
+    border-width: 1.5px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+.input-select input {
+    width: 90%;
+}
+.input-select svg {
+    width: 7%;
+    height: 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.select-dropdown .text-center {
+    width: 100%;
+    height: auto;
+    color: black;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff;
+} 
+.text-center:hover {
+    background-color: #dadada;
+}
+.input_div input::placeholder, select::placeholder {
+    color: #b7bcc3;
+    text-transform: capitalize;
+}

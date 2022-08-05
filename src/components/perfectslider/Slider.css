@@ -1,0 +1,22 @@
+.slider {
+    width: 500px;
+    height: 99%;
+    position: absolute;
+    right: -500px;
+    background-color: #fff;
+    /* margin-left: 70%; */
+    /* transform: translateX(-150px); */
+    border: 1px solid rgb(243, 237, 237);
+    transition: transform 1s ease-in-out;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow-y: scroll; */
+}
+@media screen and (max-width: 500px) {
+    .slider {
+        width: 100%;
+    }
+}
