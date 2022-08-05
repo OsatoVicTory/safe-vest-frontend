@@ -1,4 +1,4 @@
-const endPoint = "http://localhost:8080";
+const endPoint = "https://safe-vest.herokuapp.com";
 
 const Data = {
     account: `${endPoint}/api/db/user/account`,
