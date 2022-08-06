@@ -60,10 +60,11 @@ const ViewTarget = ({ type }) => {
         // var c = day.getDay()
     }
 
-    const billion=1000000000,million=1000000,thousand=1000;
+    let trillion = 1000000000000, billion = 1000000000, million=1000000, thousand=1000;
 
     const quantity = (val) => {
-        if(val >= billion) return Math.floor(val/billion) + "B"+(val>billion ? "+" : "");
+        if(val >= trillion) return Math.floor(val/trillion) + "T"+(val>trillion ? "+" : "");
+        else if(val >= billion) return Math.floor(val/billion) + "B"+(val>billion ? "+" : "");
         else if(val >= million) return Math.floor(val/million) + "M"+(val>million ? "+" : "");
         else if(val >= thousand) return Math.floor(val/thousand) + "K"+(val>thousand ? "+" : "");
         else return val;
@@ -71,7 +72,7 @@ const ViewTarget = ({ type }) => {
 
 
     return (
-        <div className="popup_container" style={{ zIndex: "10" }}>
+        <div className="popup_container" style={{ zIndex: "1000" }}>
             <div className="popup_dummy" onClick={handleNavigate}></div>
             <div className="popup_main">
                 <Slider zIndex={1000} leave={leave}>

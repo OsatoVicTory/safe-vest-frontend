@@ -12,9 +12,9 @@ const Balance = ({ Data, color }) => {
                     <span className="med_txtt">TOTAL BALANCE</span>
                     <span className="big_txtt" style={{color: color}}>&#8358;{Data.amt}.00</span>
                 </div>
-                <div className="balance_base">
+                <div className="balance_base" style={{padding: "0px"}}>
                     {Data.body.map((val, idx) => (
-                        <Link to={val.link} className="base_content"key={idx} style={{width: `${100/(Data.body.length)}%`, textDecoration:"none"}}>
+                        <Link to={val.link} className="base_content"key={idx} style={{ textDecoration:"none"}}>
                             {val.svg}
                             <span className="small_txtt" style={{color: color}}>{val.name}</span>
                         </Link>

@@ -57,7 +57,7 @@ const ActivitiesModal = () => {
 
 
     return (
-        <div className="modal" style={{ zIndex: "10" }}>
+        <div className="modal" style={{ zIndex: "1000" }}>
                 <div className="popup_dummy" onClick={handleLeave}></div>
                 <Slider zIndex={1000000} leave={leave}>
                     <div className="popup_top">

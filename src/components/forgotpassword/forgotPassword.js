@@ -79,7 +79,7 @@ const Forgotpassword = () => {
                           required
                         />
                        
-                        <Input label="Password" 
+                        <Input label="New Password" 
                           placeholder="" name="password" type="password" 
                           handleChange={handleChange} 
                           required
@@ -87,7 +87,7 @@ const Forgotpassword = () => {
 
                         <div className="forgotpassword_base">
                             {/* <input type="submit"value={"Log In"}></input> */}
-                            {!loading ? <input type="submit"value={"Log In"}></input>
+                            {!loading ? <input type="submit"value={"Reset Password"}></input>
                               : 
                               <div className="loading">
                                 <Loading />

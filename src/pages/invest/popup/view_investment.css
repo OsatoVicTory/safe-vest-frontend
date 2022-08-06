@@ -195,3 +195,8 @@
 .extra > span, .extra .extra_list {
     margin-top: 10px;
 }
+@media screen and (max-width: 320px) {
+    .Button-about {
+        font-size: 18px;
+    }
+}

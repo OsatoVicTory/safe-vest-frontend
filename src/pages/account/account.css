@@ -82,3 +82,15 @@
 .account_info span {
     font-size: 16px;
 }
+@media screen and (max-width: 450px) {
+    .account .account_content {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 20px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .account_info h2 {
+        font-size: 20px;
+    }
+}

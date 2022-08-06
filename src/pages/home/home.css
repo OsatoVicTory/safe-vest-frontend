@@ -175,6 +175,7 @@
     .home_container .home_content {
         width: 100%;
         height: 99%;
+        padding: 20px 30px;
     }
     .home_content .home_main {
         width: 100%;

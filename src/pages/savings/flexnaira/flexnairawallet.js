@@ -22,7 +22,7 @@ const FlexNairaWallet = () => {
     
 
     return (
-        <div className="wallet" style={{ zIndex: "10" }}>
+        <div className="wallet" style={{ zIndex: "1000" }}>
             <div className="wallet_dummy" onClick={handleNavigate}></div>
             <div className="wallet_main">
                 <Slider zIndex={1000} leave={leave}>

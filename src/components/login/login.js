@@ -152,10 +152,10 @@ const LogIn = () => {
                 </div>
                 
             </div>
-            <span className="signup">Don't have an account?
-                <Link to="/signup" className="signup" style={{textDecoration: "none"}}> {"   Register"}</Link>
+            <span className="signupLink">Don't have an account?
+                <Link to="/signup" className="signupLink" style={{textDecoration: "none"}}> {"   Register"}</Link>
             </span>
-            <Link to="/forgotpassword" className="signup" style={{textDecoration: "none"}}>Forgot Password?</Link>
+            <Link to="/forgotpassword" className="forgot" style={{textDecoration: "none"}}>Forgot Password?</Link>
                 
         </div>
     )

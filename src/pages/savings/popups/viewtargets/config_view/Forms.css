@@ -12,6 +12,7 @@
 }
 .complete_base {
     margin-top: 30px;
+    background-color: #fff;
     /* z-index: 500; */
     box-sizing: border-box;
     height: auto;

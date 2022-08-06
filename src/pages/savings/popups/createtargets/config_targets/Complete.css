@@ -109,6 +109,7 @@
 }
 .complete_base {
     position: fixed;
+    background-color: #fff;
     /* background-color: red; */
     bottom: 0%;
     z-index: 500;

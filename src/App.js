@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AppMain from "./AppMain";
 import LogIn from "./components/login/login"; 
@@ -8,6 +8,10 @@ import Forgotpassword from './components/forgotpassword/forgotPassword';
 import LandingPage from './components/landingpage/landingPage';
  
 function App() {
+
+  useEffect(() => {
+    document.title = "Safe Vest App"
+  }, []);
   
   return (
     <BrowserRouter>

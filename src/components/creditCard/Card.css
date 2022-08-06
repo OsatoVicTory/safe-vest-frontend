@@ -86,3 +86,14 @@
 .bottom {
     margin-top: 20px;
 }
+@media screen and (max-width: 459px) {
+    .cCard .card_front, .cCard .card_back {
+        width: calc(100% - 10px);
+    }
+    .card_front .card_number {
+        font-size: 25px;
+    }
+    .expire {
+        margin-left: 100px;
+    }
+}

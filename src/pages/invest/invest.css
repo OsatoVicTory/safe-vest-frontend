@@ -157,3 +157,8 @@
         height: auto;
     }
 }
+@media screen and (max-width: 770px) {
+    .investify_container {
+        padding-left: 20px;
+    }
+}

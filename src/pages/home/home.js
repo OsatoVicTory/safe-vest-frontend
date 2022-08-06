@@ -18,10 +18,20 @@ const Home = () => {
     const account = useSelector((state) => state.account);
     const navigate = useNavigate();
 
+    let trillion = 1000000000000, billion = 1000000000, million=1000000, thousand=1000;
+
+    const quantity = (val) => {
+        if(val >= trillion) return Math.floor(val/trillion) + "T"+(val>trillion ? "+" : "");
+        else if(val >= billion) return Math.floor(val/billion) + "B"+(val>billion ? "+" : "");
+        else if(val >= million) return Math.floor(val/million) + "M"+(val>million ? "+" : "");
+        else if(val >= thousand) return Math.floor(val/thousand) + "K"+(val>thousand ? "+" : "");
+        else return val + ".00";
+    }
+
     const printAmt = (id) => {
-        if(id==0) return account.amt ? account.amt+".00" : "0.00";
+        if(id==0) return account.amt ? quantity(account.amt) : "0.00";
         else if(id == 1) return "0.00";
-        else return account.flexnaira_amt ? account.flexnaira_amt+".00" : "0.00";
+        else return account.flexnaira_amt ? quantity(account.flexnaira_amt) : "0.00";
     }
 
     const handleNavigate = () => {

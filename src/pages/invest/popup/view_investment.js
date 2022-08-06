@@ -49,7 +49,7 @@ const ViewInvestment = () => {
 
 
     return (
-        <div className="popup_container" style={{ zIndex: "10" }}>
+        <div className="popup_container" style={{ zIndex: "1000" }}>
             <div className="popup_dummy" onClick={handleNavigate}></div>
             <div className="popup_main">
                 <Slider zIndex={1000} leave={leave}>
