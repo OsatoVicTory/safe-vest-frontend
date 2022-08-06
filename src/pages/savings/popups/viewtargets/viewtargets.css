@@ -79,7 +79,8 @@
 }
 .body_desc {
     background-color: #969696;
-    height: 19rem;
+    height: auto;
+    padding: 30px 0px;
 }
 .desc_container {
     background-color: #fff;
@@ -87,13 +88,13 @@
 }
 .body_desc .desc_container {
     width: 85%;
-    height: 80%;
+    height: auto;
 }
 .desc_container .desc_content {
     width: 90%;
     height: 100%;
     box-sizing: border-box;
-    padding: 15px 0px;
+    padding: 20px 0px;
 }
 .desc_content h2 {
     color: black;
