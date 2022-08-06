@@ -6,7 +6,7 @@ import x from "../../svgs/x.svg";
 
 const Alert = ({ err, message, closeAlert }) => {
     //message.includes("Wrong")?x:
-    const isErr = message.includes("Wrong");
+    const isErr = message.includes("Wrong") || message.includes("Incorrect");
 
     return (
         <div className="alert" 
