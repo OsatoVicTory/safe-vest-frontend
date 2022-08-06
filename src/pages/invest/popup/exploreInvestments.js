@@ -74,7 +74,7 @@ const ViewExploreInvestment = () => {
                                 <span className="small_txxt">By {data.company}</span>
                             </div>
                             <div className="details_right">
-                                <h2>₦{data.amt}</h2>
+                                <h2>&#8358;{data.amt}</h2>
                                 <span className="small_txxt">/ unit</span>
                             </div>
                         </div>

@@ -91,11 +91,11 @@ const ViewTarget = ({ type }) => {
                                     <div className="flexes">
                                         <div className="flex">
                                             <span className="light">My Balance</span>
-                                            <span className="dark" style={{color: "rgb(39,174,96)"}}>₦{quantity(account.amt)}</span>
+                                            <span className="dark" style={{color: "rgb(39,174,96)"}}>&#8358;{quantity(account.amt)}</span>
                                         </div>
                                         <div className="flex">
                                             <span className="light">Target</span>
-                                            <span className="dark">₦{quantity(data.target)}</span>
+                                            <span className="dark">&#8358;{quantity(data.target)}</span>
                                         </div>
                                         <div className="flex">
                                             <span className="light">Member</span>

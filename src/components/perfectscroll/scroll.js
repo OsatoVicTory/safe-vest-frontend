@@ -18,7 +18,8 @@ const PerfectScroll = ({ props, isSavings, safeLock }) => {
     let billion = 1000000000, million=1000000, thousand=1000;
 
     const quantity = (val) => {
-        if(val >= billion) return Math.floor(val/billion) + "B"+(val>billion ? "+" : "");
+        if(isExplore) return "10K";
+        else if(val >= billion) return Math.floor(val/billion) + "B"+(val>billion ? "+" : "");
         else if(val >= million) return Math.floor(val/million) + "M"+(val>million ? "+" : "");
         else if(val >= thousand) return Math.floor(val/thousand) + "K"+(val>thousand ? "+" : "");
         else return val;
@@ -52,11 +53,7 @@ const PerfectScroll = ({ props, isSavings, safeLock }) => {
                                 <div className='dets_mid'>
                                     <div className='dets_bal'>
                                         <span className="big_text" style={{color: isSavings?"rgb(39,174,96)":"rgb(34,149,242)"}}>
-                                          ₦{safeLock ? 
-                                                quantity(val.amt) :
-                                                isExplore?(val.days_left=="Completed"?quantity(val.amt):"10K"):
-                                                    quantity(account.amt||0.00)
-                                            }
+                                            &#8358;{(quantity(safeLock ? val.amt : account.amt)) || 0.00}
                                         </span>
                                         <span className="small_text" style={{paddingTop: (isSavings||safeLock) ? "15px": "0px"}}>{val.amttype}</span>
                                     </div>

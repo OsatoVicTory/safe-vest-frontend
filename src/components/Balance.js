@@ -10,7 +10,7 @@ const Balance = ({ Data, color }) => {
             <div className="balance_wrapper">
                 <div className="balance_top">
                     <span className="med_txtt">TOTAL BALANCE</span>
-                    <span className="big_txtt" style={{color: color}}>₦{Data.amt}.00</span>
+                    <span className="big_txtt" style={{color: color}}>&#8358;{Data.amt}.00</span>
                 </div>
                 <div className="balance_base">
                     {Data.body.map((val, idx) => (

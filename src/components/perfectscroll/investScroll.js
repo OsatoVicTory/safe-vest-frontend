@@ -52,7 +52,7 @@ const PerfectScroll = ({ props, amount }) => {
                                 </div>
                                 <div className='dets_mid'>
                                     <div className='dets_bal'>
-                                        <span className="big_text">₦{quantity(val.amt)}</span>
+                                        <span className="big_text" style={{color: "purple"}}>&#8358;{quantity(val.amt)}</span>
                                         <span className="small_text">{val.amttype}</span>
                                     </div>
                                     <div className="dets_bal">

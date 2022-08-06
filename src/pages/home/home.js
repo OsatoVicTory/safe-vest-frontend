@@ -19,9 +19,9 @@ const Home = () => {
     const navigate = useNavigate();
 
     const printAmt = (id) => {
-        if(id==0) return account.amt ? "₦"+account.amt+".00" : "₦0.00";
-        else if(id == 1) return "₦0.00";
-        else return account.flexnaira_amt ? "₦"+account.flexnaira_amt+".00" : "₦0.00";
+        if(id==0) return account.amt ? account.amt+".00" : "0.00";
+        else if(id == 1) return "0.00";
+        else return account.flexnaira_amt ? account.flexnaira_amt+".00" : "0.00";
     }
 
     const handleNavigate = () => {
@@ -48,7 +48,7 @@ const Home = () => {
                                     {val.svg}
                                     <div className="scroll_text">
                                         <span>{val.title}</span>
-                                        <h1>{printAmt(idx)}</h1>
+                                        <h1>&#8358;{printAmt(idx)}</h1>
                                     </div>
                                 </Link>
                             </li>

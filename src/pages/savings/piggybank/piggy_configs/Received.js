@@ -26,7 +26,7 @@ const Received = ({ amt, lstDate, dateVal }) => {
                 <img src={circle} />
                 <div className="display_flex">
                     <span className="small" style={{color: "white"}}>{dateVal.join(" ")} Interest Payment</span>
-                    <span className="big" style={{color: "white"}}>₦{amt}</span>
+                    <span className="big" style={{color: "white"}}>&#8358;{amt}</span>
                 </div>
             </div>
             <div className="show_breakdown">
@@ -45,7 +45,7 @@ const Received = ({ amt, lstDate, dateVal }) => {
                             <div className="display_flex">
                                 <span className="med" style={{color: "rgb(39, 174, 96)", fontSize: "19px", fontWeight:"bold"}}>₦{amt}</span>
                                 <span className="small">
-                                    Balance @ {lstDate.replace(Day, (idx+1 < 10 ? "0"+(idx+1) : idx+1))} - ₦{amt}
+                                    Balance @ {lstDate.replace(Day, (idx+1 < 10 ? "0"+(idx+1) : idx+1))} - &#8358;{amt}
                                 </span>
                             </div>
                         </li>

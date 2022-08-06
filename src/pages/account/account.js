@@ -14,7 +14,7 @@ const Account = () => {
         {value: "123456789", name: "Flex Number"},
         {value: "0", name: "Piggy Points"},
         {value: "123456789", name: "Piggy ID"},
-        {value: "₦0.00", name: "Referal Earnings"}
+        {value: "0", name: "Referals"}
     ]
     const account = useSelector((state) => state.account)
     // console.log(account)

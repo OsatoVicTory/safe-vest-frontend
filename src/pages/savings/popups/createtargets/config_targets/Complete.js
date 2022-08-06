@@ -150,8 +150,8 @@ const Complete = ({ type, values }) => {
                             <circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle>
                         </svg>
                         <div className="design_txt">
-                            <span className="big">Total target of N{state.target}</span>
-                            <span className="small">You want to reach N{state.target} in your savings target</span>
+                            <span className="big">Total target of &#8358;{state.target}</span>
+                            <span className="small">You want to reach &#8358;{state.target} in your savings target</span>
                         </div>
                     </div>
                     <form onSubmit={(e) => handleSubmit(e)}>

@@ -49,7 +49,7 @@ const FlexNairaWallet = () => {
                             </svg>
                             <div className="wallet_flex">
                                 <span className="small_ttxxt">Flex Naira Balance</span>
-                                <span className="med_ttxxt">₦{account.flexnaira_amt || "0"}.00</span>
+                                <span className="med_ttxxt">&#8358;{account.flexnaira_amt || "0"}.00</span>
                             </div>
                         </div>
                         <Link to="topup/*" className="wallet_link" style={{textDecoration: "none"}}>Topup Wallet</Link>

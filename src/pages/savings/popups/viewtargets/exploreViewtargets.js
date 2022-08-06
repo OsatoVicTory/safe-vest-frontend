@@ -103,12 +103,12 @@ const ViewExploreTarget = () => {
                                         <div className="flex">
                                             <span className="light">Group Balance</span>
                                             <span className="dark" style={{color: "rgb(39,174,96)"}}>
-                                                ₦{data.days_left=="Completed"?quantity(data.amt):"10K"}
+                                                &#8358;{data.days_left=="Completed"?quantity(data.amt):"10K"}
                                             </span>
                                         </div>
                                         <div className="flex">
                                             <span className="light">Target</span>
-                                            <span className="dark">₦{quantity(data.target)}</span>
+                                            <span className="dark">&#8358;{quantity(data.target)}</span>
                                         </div>
                                         <div className="flex">
                                             <span className="light">Member</span>
