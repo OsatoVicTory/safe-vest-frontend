@@ -181,7 +181,7 @@ const activitiesReducer = (state = [], action) => {
             
             
             Arr.sort((a, b) => a["days"] - b["days"])
-            return [...state, ...Arr];
+            return Arr;
 
         case "UPDATE_ACTIVITIES":
             return [action.payload, ...state];
